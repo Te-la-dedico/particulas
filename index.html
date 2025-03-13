@@ -23,9 +23,9 @@
   }
  .love-message {
     position: absolute;
-    top: 10%; /* Posición vertical del texto */
-    left: 50%;
-    transform: translateX(-50%);
+    top: 50%; /* Centrado vertical */
+    left: 50%; /* Centrado horizontal */
+    transform: translate(-50%, -50%); /* Centrado exacto */
     font-family: 'Great Vibes', cursive;
     font-size: 38px;
     color: #ffffff;
@@ -39,9 +39,8 @@
 /* Ajuste específico para celulares */
 @media (max-width: 768px) {
     .love-message {
-        top: 40%; /* Baja más el texto en móviles */
-        font-size: 30px; /* Ajuste del tamaño */
-        text-align: center; /* Asegura que esté centrado */
+        font-size: 24px; /* Tamaño de fuente más pequeño para móviles */
+        width: 80%; /* Ancho reducido para móviles */
     }
 }
   </style>
